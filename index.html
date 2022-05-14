@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript: Api Client</title>
+    <script src="app.js"></script>
+    <style>
+      td {
+        border: 1px dotted #999;
+        text-align: center;
+      }
+
+      .error-number {
+        color: red;
+        font-size: 12pt;
+      }
+      .error-msg {
+        color: black;
+      }
+      .table {
+        width: 100%;
+        border: black solid 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Enter employee ID or leave it black to get all list
+      <input type="text" name="emp-id" id="emp-id" />
+      <input
+        type="submit"
+        name="sumbit"
+        value="Search"
+        onclick="getEmployees()"
+      />
+    </div>
+    <div id="main-body"></div>
+    <table class="table" id="result-table"></table>
+  </body>
+</html>
